@@ -1,0 +1,22 @@
+// Breakpoints
+@media (min-width: 64em) {
+  // styles go here
+}
+
+// 640px, 1024px, 1400px
+$breakpoints-down: (
+  "vsmall": "20rem",
+  "small": "30rem",
+  "tablet": "48rem",
+  "large": "64rem",
+  "vlarge": "90rem",
+);
+
+// 639px, 1023px, 1399px
+// $breakpoints-down: ("phone": "37.5em");
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

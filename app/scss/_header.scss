@@ -1,0 +1,50 @@
+header {
+  .container {
+    height: 6.25rem;
+    color: white;
+  }
+  .header-one {
+    width: 300px;
+    @include breakpoint-down(tablet) {
+      width: 9.375rem;
+    }
+  }
+  .header-two {
+    width: 400px;
+    @include breakpoint-down(tablet) {
+      width: 160px;
+    }
+  }
+  #logo {
+    height: 5rem;
+    width: 9.375rem;
+  }
+  #user-image {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+  }
+  #searchbar {
+    padding: 0 0.4rem;
+    height: 2.25rem;
+    border: none;
+    background-color: #0f1533;
+    border-radius: 1rem;
+    @include breakpoint-down(small) {
+      background: transparent;
+    }
+    // width: 200px;
+    input {
+      height: 100%;
+      color: rgb(197, 197, 197);
+      font-size: 1rem;
+      background-color: transparent;
+      border: none;
+      padding: 0 1rem;
+      &:focus {
+        color: white;
+        outline: none;
+      }
+    }
+  }
+}
