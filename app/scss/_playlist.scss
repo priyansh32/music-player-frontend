@@ -1,4 +1,9 @@
 .playlist {
+  &-wrapper {
+    @include breakpoint-down(large) {
+      display: none;
+    }
+  }
   width: 22.5rem;
   // width: 100%;
   align-self: stretch;

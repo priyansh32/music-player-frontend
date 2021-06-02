@@ -30,3 +30,14 @@ playlists.forEach((playlist) => {
         }
     })
 })
+
+const songInfos = document.querySelectorAll('.song-info')
+songInfos.forEach((songInfo) => {
+    let songName = songInfo.querySelector('.song-name')
+    songName.addEventListener('hover', () => {
+        console.log('songName');
+        songName.classList.add('new');
+    })
+});
+
+
